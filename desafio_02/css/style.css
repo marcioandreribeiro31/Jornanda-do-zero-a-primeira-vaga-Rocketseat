@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+:root{
+    --normal-font:'Inter', sans-serif;
+    --special-font:'Emilys Candy', cursive;;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image:url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: center;   
+}
+.content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+h3{
+    font-family: var(--normal-font);
+    font-style:normal;
+    font-weight:700;
+    font-size: 16px;
+    line-height:19px;
+    color:#fff;
+}
+span{
+    color:#FFC700;       
+}
+h1{
+    color:#FFC700;
+    font-family: var(--special-font);
+    font-style:400;
+    font-size: 64px;
+    line-height:80px;
+}
+p{
+    font-family: var(--normal-font);
+    font-style: normal;
+    font-weight:400;
+    font-size:20px;
+    line-height:24px;
+    color:rgba(255,255,255,0.7)
+}
+.information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    margin-top:60px;
+}
+
+a{
+    font-family: var(--normal-font); 
+    line-height: 24px;
+    padding: 12px 32px;
+}
+
+.read{
+    font-family: var(--normal-font);
+    font-style:normal;
+    font-weight: 700;
+    font-size:20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color:rgba(255,255,255,0.6)
+}
+.read:hover{
+    background-color: #FFC700;
+    text-decoration: none;
+    color: #000;
+}
+a{
+    padding: 12px 28px;
+}
+.play{
+    background-color: #FFC700;
+    font-family: var(--normal-font);
+    font-style:normal;
+    font-weight: 700;
+    font-size:20px;
+    line-height: 24px;
+    text-decoration: none;
+    color:#000;
+}
+/* Configuração para o dispositivo galaxy fold */
+@media screen and (max-width:280px){
+    .content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    }
+    .information{
+        gap:40px;
+        margin:60px 10px 0 10px;
+    }
+    h1{
+        font-size:40px;
+    }
+    p{
+        font-size:18px;
+        padding:10px;
+    }
+    .information a{
+        padding:12px 32px;
+        font-size:18px;
+    }
+    .read{
+        font-weight: 700;
+        font-size:18px;
+        line-height: 18px;
+    }
+    .play{
+        font-weight: 700;
+        font-size:18px;
+        line-height: 18px;
+    }
+}
+/* 320px — 480px: dispositivos móveis */
+@media screen and (max-width:320px){
+    .content{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        }
+        .information{
+            gap:40px;
+            margin:60px 10px 0 10px;
+        }
+        h1{
+            font-size:40px;
+        }
+        p{
+            font-size:18px;
+            padding:10px;
+        }
+        .information a{
+            padding:12px 32px;
+            font-size:18px;
+        }
+        .read{
+            font-weight: 700;
+            font-size:18px;
+            line-height: 18px;
+        }
+        .play{
+            font-weight: 700;
+            font-size:18px;
+            line-height: 18px;
+        }
+    }
+
+/* 481px — 768px: iPads, tablets */
+@media screen and (max-width:481px){
+    .content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    }
+    .information{
+        gap:40px;
+        margin:60px 10px 0 10px;
+    }
+    h1{
+        font-size:40px;
+    }
+    p{
+        font-size:18px;
+        padding:10px;
+    }
+    .information a{
+        padding:12px 32px;
+        font-size:18px;
+    }
+    .read{
+        font-weight: 700;
+        font-size:18px;
+        line-height: 18px;
+    }
+    .play{
+        font-weight: 700;
+        font-size:18px;
+        line-height: 18px;
+    }
+}
+/* 769px — 1024px: telas pequenas, laptops */
+@media screen and (max-width:769px){
+    .content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    }
+}
+
+/* 1025px — 1200px: desktops, telas grandes */
+@media screen and (max-width:1025px){
+    .content{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        }
+}
+/* 1201px e acima —  telas muito grandes, TVs */
+@media screen and (max-width:1201px){
+    .content{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        }
+}

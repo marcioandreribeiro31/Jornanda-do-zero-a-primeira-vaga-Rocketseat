@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-text: 'Spectral', serif;
+    --font-special: 'Beth Ellen', cursive;
+}
+
+body {
+    height: 100vh;
+    background-image: url("/assets/img/pexels-lukas-1410138.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: var(--font-special);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 120px;
+    color: #000;
+}
+
+span {
+    color: #50f2d9;
+}
+
+p {
+    font-family: var(--font-text);
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 56px;
+    width: 100;
+}
+
+a {
+    font-family: var(--font-text);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 16px 32px;
+}
+
+.learn {
+    text-decoration-line: underline;
+    color: #0B0C0E;
+}
+
+.learn:hover {
+    background-color: #5EEAD4;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0B0C0E;
+}
+
+.recipes {
+    background-color: #5EEAD4;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0B0C0E;
+}
+/* Configuração para o dispositivo Galaxy Fold */
+@media screen and (max-width:280px) {
+    body {
+        background-image: url("/assets/img/pexels-lukas-1410138.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1{
+        font-size:40px;
+        line-height: 60px;
+    }
+    span {
+        color: #000;
+    }
+    p{
+        padding-top:10px;
+    }
+    .information{
+        gap:15px;
+    }
+    a {
+        font-family: var(--font-text);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 18px;
+        padding: 16px 25px;
+        width:120px;
+        margin: 0 auto;
+    }
+}
+/* 320px — 480px: dispositivos móveis */
+@media screen and (max-width:320px){
+    body {
+        background-image: url("/assets/img/pexels-lukas-1410138.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1{
+        font-size:40px;
+        line-height: 60px;
+    }
+    span {
+        color: #000;
+    }
+    p{
+        padding-top:10px;
+    }
+    
+    a {
+        font-family: var(--font-text);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 18px;
+        padding: 16px 25px;
+        margin: 0 auto;
+    }
+}
+/* 481px — 768px: iPads, tablets */
+@media screen and (max-width:481px){
+    body {
+        background-image: url("/assets/img/pexels-lukas-1410138.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1{
+        font-size:40px;
+        line-height: 60px;
+    }
+    span {
+        color: #000;
+    }
+    p{
+        padding-top:10px;
+    }
+    a {
+        font-family: var(--font-text);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 18px;
+        padding: 16px 25px;
+        margin: 0 auto;
+    }
+}
+/* 769px — 1024px: telas pequenas, laptops */
+@media screen and (max-width:769px){
+    body {
+        background-image: url("/assets/img/pexels-lukas-1410138.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1{
+        font-size:40px;
+        line-height: 60px;
+    }
+    span {
+        color: #000;
+    }
+    p{
+        padding-top:10px;
+    }
+    a {
+        font-family: var(--font-text);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 18px;
+        padding: 16px 25px;
+        margin: 0 auto;
+    }
+}
+/* 1025px — 1200px: desktops, telas grandes */
+@media screen and (max-width:1025px){
+    body {
+        background-image: url("/assets/img/pexels-lukas-1410138.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    p{
+        padding-top:10px;
+    }
+    a {
+        font-family: var(--font-text);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 18px;
+        padding: 16px 25px;
+        margin: 0 auto;
+    }
+}
+/* 1201px e acima —  telas muito grandes, TVs */
+@media screen and (max-width:1201px){
+    body {
+        background-image: url("/assets/img/pexels-lukas-1410138.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    p{
+        padding-top:10px;
+    }
+    
+}
